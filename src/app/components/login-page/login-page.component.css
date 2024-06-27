@@ -1,0 +1,21 @@
+.Container {
+    background-color: #1A71FE;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.Login{
+    height: 70%;
+    width: 70%;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    background-color: white;
+    padding: 50px;
+}
+.LoginCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
