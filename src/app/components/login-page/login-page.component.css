@@ -1,3 +1,6 @@
+body {
+    font-family: Arial, sans-serif; /* Default font for the entire body */
+}
 .Container {
     background-color: #1A71FE;
     height: 100vh;
@@ -6,16 +9,76 @@
     align-items: flex-end;
 }
 .Login{
-    height: 70%;
-    width: 70%;
-    border-top-right-radius: 100px;
-    border-top-left-radius: 100px;
+    height: 85%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    gap: 1rem;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
     background-color: white;
     padding: 50px;
+    padding-inline: 100px;
+    
+}
+.Art{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Art img{
+    height: 70%;
 }
 .LoginCard{
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 13px;
+    color: white;
+    width: 40%;
+    background-image: url("../../../../public/blob.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120%;
+    font-family: 'Poppins', sans-serif;
+}
+.LoginDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+.LoginDetails input{
+width: 220px;
+height: 30px;
+border-top-right-radius: 1rem;
+border-bottom-right-radius: 1rem;
+border: none;
+background-color: #E7F0FF;
+color: #1A71FE;
+padding: 0.8rem;
+font-family: 'Poppins', sans-serif;
+font-size: 1rem;
+}
+.LoginCard input:focus {
+    outline: none; /* Removes the default outline */
+    border: none;  /* Removes the default border */
+}
+.LoginCard button{
+    width: 10rem;
+    height: 1.7rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    border: none;
+    color: #1A71FE;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+.LoginCard button:hover{
+    background-color: #32de84;
 }
