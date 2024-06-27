@@ -10,12 +10,16 @@ body {
 }
 .Nav{
     display: flex;
+    gap: 1rem;
     align-items: center;
     background-color: #1A71FE;
     height: 5rem;
     color:white;
     font-family: 'Poppins', sans-serif;
     padding-inline: 3rem;
+}
+.Nav h1{
+    font-family: 'Poppins', sans-serif;
 }
 .Login{
     height: 100%;
