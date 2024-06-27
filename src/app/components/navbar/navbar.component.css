@@ -1,7 +1,18 @@
+body {
+    font-family: Arial, sans-serif; /* Default font for the entire body */
+}
 .Container {
     background-color: #1A71FE;
-    height: 100px;
+    height: fit-content;
+    padding: 1rem;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.Left{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
