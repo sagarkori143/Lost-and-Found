@@ -8,8 +8,17 @@ body {
     justify-content: center;
     align-items: flex-end;
 }
+.Nav{
+    display: flex;
+    align-items: center;
+    background-color: #1A71FE;
+    height: 5rem;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    padding-inline: 3rem;
+}
 .Login{
-    height: 85%;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -21,8 +30,8 @@ body {
     background-color: white;
     padding: 50px;
     padding-inline: 100px;
-    
 }
+
 .Art{
     width: 40%;
     display: flex;
@@ -32,6 +41,12 @@ body {
 }
 .Art img{
     height: 70%;
+}
+.Divider{
+    border: solid grey 2px;
+    margin-top: 5%;
+    height: 80%;
+    margin-left: 8%;
 }
 .LoginCard{
     padding: 20px;
@@ -45,7 +60,8 @@ body {
     background-image: url("../../../../public/blob.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 120%;
+    background-size: 122%;
+    overflow:visible ;
     font-family: 'Poppins', sans-serif;
 }
 .LoginDetails{
@@ -61,13 +77,22 @@ border-bottom-right-radius: 1rem;
 border: none;
 background-color: #E7F0FF;
 color: #1A71FE;
-padding: 0.8rem;
+padding-left: 2rem;
 font-family: 'Poppins', sans-serif;
 font-size: 1rem;
 }
 .LoginCard input:focus {
     outline: none; /* Removes the default outline */
     border: none;  /* Removes the default border */
+}
+.InputDiv{
+    display: flex;
+    
+}
+.InputDiv img{
+    position: relative;
+    left: 22px;
+    top: 7px;
 }
 .LoginCard button{
     width: 10rem;
