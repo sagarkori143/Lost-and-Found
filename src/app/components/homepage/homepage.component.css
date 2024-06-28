@@ -15,15 +15,17 @@ body {
 .Items {
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 4.5rem;
     padding: 3rem;
 }
 
 .ItemCard {
     position: relative;
     border: solid 3px;
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;

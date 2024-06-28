@@ -6,6 +6,7 @@
   <div class="Items">
       <div *ngFor="let item of LostAndFounditems" class="ItemCard" [ngClass]="{'Lost': item.status === 'Lost', 'Found': item.status === 'Found'}">
           <img [src]="item.image">
+          <span>{{ timeAgo(item.date, item.time) }}</span>
           <div class="Details">
               <h3>{{item.title}}</h3>
               <p>{{item.description}}</p>
