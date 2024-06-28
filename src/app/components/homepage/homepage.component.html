@@ -1,9 +1,17 @@
 <div>
-    <app-navbar></app-navbar>
+  <app-navbar></app-navbar>
 </div>
 <div class="Container">
-    <p>Recently reported items!</p>
+  <p>Recently reported items!</p>
   <div class="Items">
-    <div class="ItemCard"></div>
+      <div *ngFor="let item of LostAndFounditems" class="ItemCard" [ngClass]="{'Lost': item.status === 'Lost', 'Found': item.status === 'Found'}">
+          <img [src]="item.image">
+          <div class="Details">
+              <h3>{{item.title}}</h3>
+              <p>{{item.description}}</p>
+              <p><strong>Status:</strong> {{item.status}}</p>
+              <p><strong>Place:</strong> {{item.Place}}</p>
+          </div>
+      </div>
   </div>
 </div>
