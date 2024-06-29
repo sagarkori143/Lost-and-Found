@@ -8,17 +8,18 @@
       <button class="postBtn btn">Post New</button>
     </div>
     <div class="Items">
-      <div *ngFor="let item of LostAndFounditems" class="ItemCard"
-        [ngClass]="{'Lost': item.status === 'Lost', 'Found': item.status === 'Found'}">
+      <div *ngFor="let item of LostAndFounditems" class="ItemCard">
         <img [src]="item.image">
         <div class="CardBottom">
-        <span>{{ timeAgo(item.date, item.time) }}</span>
+          <span>{{ timeAgo(item.date, item.time) }}</span>
+          <strong><p [ngClass]="{'Lost': item.status === 'Lost', 'Found': item.status === 'Found'}"> {{item.status}}</p></strong>
         </div>
         <div class="Details">
+          <div class="DetailsText">
           <h3>{{item.title}}</h3>
           <p>{{item.description}}</p>
-          <p><strong>Status:</strong> {{item.status}}</p>
           <p><strong>Place:</strong> {{item.Place}}</p>
+          </div>
           <button class="btn">Contact the author</button>
         </div>
       </div>

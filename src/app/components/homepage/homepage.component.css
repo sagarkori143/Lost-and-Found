@@ -23,11 +23,12 @@ body {
     
 }
 .Heading p{
-    font-size: 30px;
+    font-size: 35px;
     color: #1A71FE;
     font-family: 'Poppins', sans-serif;
     border-left: solid grey 5px;
     padding-inline: 1rem;
+    font-weight: 600;
 }
 .btn{
     padding-inline: 2.2rem;
@@ -42,6 +43,7 @@ body {
 .btn:hover{
     background-color: #1A71FE;
     color: white;
+    border: solid white 2px;
 }
 
 .Items {
@@ -55,20 +57,21 @@ body {
 
 .ItemCard {
     position: relative;
-    height: 250px;
+    height: 300px;
     width: 250px;
     border-radius: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    padding: 10px;
     transition: transform 0.3s;
     overflow: hidden;
     box-shadow: 0px 4px 28px -8px #1A71FE;
 }
 
 .ItemCard img {
-    height: 170px;
+    height: 80%;
     width: 100%;
     object-fit:cover; /* Ensure all images have the same aspect ratio */
     border-top-left-radius: 0.8rem;
@@ -80,6 +83,11 @@ body {
     display: flex;
     flex-direction: column;
     padding-inline: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+.ItemCard .CardBottom span{
+  color: grey;
+  font-size: 13px;
 }
 .ItemCard .Details {
     position: absolute;
@@ -92,7 +100,6 @@ body {
     opacity: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 1rem;
     box-sizing: border-box;
@@ -100,6 +107,10 @@ body {
     border-radius: 1.3rem;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
+}
+.ItemCard .Details .btn{
+    position: fixed;
+    bottom: 5px;
 }
 
 .ItemCard:hover .Details {
@@ -109,5 +120,12 @@ body {
 .ItemCard:hover {
     transform: scale(1.1); /* Smooth scale-up and scale-down */
     transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+ .Lost {
+    color: rgb(159, 11, 11);
+    font-size: 1.2rem;
+}
+ .Found{
+    color: rgb(5, 110, 5);
 }
 

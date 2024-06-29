@@ -12,13 +12,22 @@ import { CommonModule } from '@angular/common';
 export class HomepageComponent {
   LostAndFounditems = [
     {
+      "title": "JBL Earbuds",
+      "status": "Lost",
+      "description": "It was black cased JBL tune 230nc buds worth 5k.",
+      "image": "https://x.imastudent.com/content/0050459_jbl-tune-beam-noise-cancelling-true-wireless-earbuds_360.jpeg",
+      "Place": "Panini-A",
+      "date": "2024-06-29",
+      "time": "10:35"
+    },
+    {
       "title": "A black umbrella",
       "status": "Lost",
       "description": "It was a black umbrella with a doggy tag over it",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNDeG8Tucxub9KkS7l4rCx990ny3MCJL7mQKfwBtO-211fEAl8mtJR-DT0bmzY0KXYdTs&usqp=CAU",
       "Place": "Area around the seminar hall",
-      "date": "2024-06-24",
-      "time": "10:35"
+      "date": "2024-06-29",
+      "time": "03:35"
     },
     {
       "title": "Iphone back cover",
