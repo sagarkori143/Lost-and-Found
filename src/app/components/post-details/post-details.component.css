@@ -35,6 +35,18 @@ body {
     animation: popupOpenAnimation 0.2s forwards;
     transition: transform 0.25s ease, opacity 0.25s ease;
   }
+  .popup .Closer{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
+  .popup .Closer{
+    height: 30px;
+    cursor: pointer;
+  }
+  .popup .Closer:hover{
+    scale: 120%;
+  }
   .popup .Left{
     display: flex;
     flex-direction: column;
@@ -44,14 +56,17 @@ body {
     padding-top: 1rem;
     height: 100%;
     width: 45%;
+    overflow: hidden;
+    box-sizing: border-box;
   }
   .popup .Left img{
     height: 80%;
     object-fit: contain;
+    border-radius: 10px;
   }
   .ImagesArray{
     height: 15%;
-    width: 60%;
+    width: fit-content;
     display: flex;
     padding: 3px;
     gap: 2rem;

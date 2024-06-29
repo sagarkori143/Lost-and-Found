@@ -1,10 +1,10 @@
 <div class="backdrop" *ngIf="Open" (click)="closeDetails()">
   <div class="popup" [ngClass]="{'closing': isClosing}" (click)="$event.stopPropagation()">
     <div class="Left">
-      <img src={{ItemSelected.image}}>
+      <img [src]="imageSelected">
       <div class="ImagesArray">
         <div *ngFor="let Image of ItemSelected.otherImages" class="otherImage">
-          <img src={{Image.src}} alt="img" />
+          <img [src]="Image.src" alt="img" (click)="changeImage(Image.src)" />
         </div>
       </div>
     </div>
@@ -13,7 +13,7 @@
       <h2>{{ItemSelected.title}}</h2>
       <p>{{ItemSelected.description}}</p>
       <p>{{ItemSelected.Place}}</p>
-      <button (click)="closeDetails()">Close</button>
     </div>
+    <img src="CloserIcon.png" (click)="closeDetails()" class="Closer">
   </div>
 </div>

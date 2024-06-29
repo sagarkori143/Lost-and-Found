@@ -17,10 +17,10 @@ export class HomepageComponent {
       "description": "It was black cased JBL tune 230nc buds worth 5k.",
       "image": "https://x.imastudent.com/content/0050459_jbl-tune-beam-noise-cancelling-true-wireless-earbuds_360.jpeg",
       "otherImages": [
-        {"src": "https://cdn.thewirecutter.com/wp-content/media/2022/09/wireless-earbuds-2048px-3039.jpg"},
-        {"src": "https://m.media-amazon.com/images/I/51w-FmYk0HL._AC_SL1500_.jpg"},
-        {"src": "https://m.media-amazon.com/images/I/61FYqaY2CKL._AC_SX679_.jpg"},
-        {"src": "https://m.media-amazon.com/images/I/51bWf26V9HL._AC_SL1500_.jpg"}
+        {"src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9CySEe1fpG3HGFSzgiHMl36XC0P40l5wtgA&s"},
+        {"src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsKQO9IwUhIX8t6yZg3hsiXiURCfAYFB4yEA&s"},
+        {"src": "https://www.jiomart.com/images/product/original/492796801/jbl-tune-230-nc-true-wireless-earbuds-with-noise-cancellation-black-digital-o492796801-p591225906-8-202205022207.jpeg?im=Resize=(420,420)"},
+        {"src": "https://m.media-amazon.com/images/I/61D3b7RsXNL.jpg"}
       ],
       "Place": "Panini-A",
       "date": "2024-06-29",

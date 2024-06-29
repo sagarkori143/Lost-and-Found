@@ -1,19 +1,28 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'app-post-details',
   templateUrl: './post-details.component.html',
   styleUrls: ['./post-details.component.css'],
   standalone: true,
-  imports:[CommonModule]
+  imports: [CommonModule]
 })
-export class PostDetailsComponent {
+export class PostDetailsComponent implements OnChanges {
   @Input() ItemSelected: any;
   @Output() close = new EventEmitter<void>();
 
-  Open=true;
+  imageSelected: string="";
+  Open = true;
   isClosing = false;
+
+  ngOnChanges() {
+    this.imageSelected = this.ItemSelected.image;
+  }
+
+  changeImage(image: string) {
+    this.imageSelected = image;
+  }
 
   closeDetails() {
     this.isClosing = true;
