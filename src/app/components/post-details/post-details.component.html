@@ -1,9 +1,19 @@
-<div class="backdrop" *ngIf="!isClosing" (click)="closeDetails()">
-    <div class="popup" [ngClass]="{'closing': isClosing}" (click)="$event.stopPropagation()">
+<div class="backdrop" *ngIf="Open" (click)="closeDetails()">
+  <div class="popup" [ngClass]="{'closing': isClosing}" (click)="$event.stopPropagation()">
+    <div class="Left">
+      <img src={{ItemSelected.image}}>
+      <div class="ImagesArray">
+        <div *ngFor="let Image of ItemSelected.otherImages" class="otherImage">
+          <img src={{Image.src}} alt="img" />
+        </div>
+      </div>
+    </div>
+    <div class="Divider"></div>
+    <div class="Right">
       <h2>{{ItemSelected.title}}</h2>
       <p>{{ItemSelected.description}}</p>
       <p>{{ItemSelected.Place}}</p>
       <button (click)="closeDetails()">Close</button>
     </div>
   </div>
-  
+</div>

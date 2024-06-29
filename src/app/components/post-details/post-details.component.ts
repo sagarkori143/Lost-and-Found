@@ -8,17 +8,18 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   standalone: true,
   imports:[CommonModule]
 })
-export class PostdetailsComponent {
+export class PostDetailsComponent {
   @Input() ItemSelected: any;
   @Output() close = new EventEmitter<void>();
 
+  Open=true;
   isClosing = false;
 
   closeDetails() {
     this.isClosing = true;
     setTimeout(() => {
       this.close.emit();
-      this.isClosing = false;
+      this.Open = false;
     }, 300); // Duration of the closing animation, adjust as necessary
   }
 }
