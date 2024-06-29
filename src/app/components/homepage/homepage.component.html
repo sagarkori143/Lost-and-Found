@@ -8,7 +8,7 @@
       <button class="postBtn btn">Post New</button>
     </div>
     <div class="Items">
-      <div *ngFor="let item of LostAndFounditems" class="ItemCard">
+      <div *ngFor="let item of LostAndFounditems" class="ItemCard" (click)="selectItem(item)">
         <img [src]="item.image">
         <div class="CardBottom">
           <span>{{ timeAgo(item.date, item.time) }}</span>
@@ -23,13 +23,14 @@
             <h3>{{item.title}}</h3>
             <p>{{item.description}}</p>
             <p class="Location">
-              <img [src]="item.status === 'Found' ? 'locationGreen.png' : 'locationRed.png'" height="3px"/> 
+              <img [src]="item.status === 'Found' ? 'locationGreen.png' : 'locationRed.png'" height="3px" />
               {{item.Place}}
             </p>
           </div>
-          <button class="btn">Contact the author</button>
+          <button class="btn" (click)="showContactDetails(item, $event)">Contact the author</button>
         </div>
       </div>
     </div>
   </div>
 </div>
+<app-post-details *ngIf="selectedItem" [ItemSelected]="selectedItem" (close)="closeDetails()"></app-post-details>

@@ -1,0 +1,9 @@
+<div class="backdrop" *ngIf="!isClosing" (click)="closeDetails()">
+    <div class="popup" [ngClass]="{'closing': isClosing}" (click)="$event.stopPropagation()">
+      <h2>{{ItemSelected.title}}</h2>
+      <p>{{ItemSelected.description}}</p>
+      <p>{{ItemSelected.Place}}</p>
+      <button (click)="closeDetails()">Close</button>
+    </div>
+  </div>
+  

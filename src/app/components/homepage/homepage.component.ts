@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { CommonModule } from '@angular/common';
-
+import { PostdetailsComponent } from '../post-details/post-details.component';
 @Component({
   selector: 'app-homepage',
   standalone: true,
-  imports: [NavbarComponent,CommonModule],
+  imports: [NavbarComponent,CommonModule,PostdetailsComponent],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css'
 })
@@ -192,6 +192,22 @@ export class HomepageComponent {
       "time": "17:40"
     },
 ]
+
+ /* This is the backdrop logic */
+ selectedItem: object | null = null;
+
+  selectItem(Item: object) {
+    this.selectedItem = Item;
+  }
+  showContactDetails(item: any, event: Event) {
+    // Handle the logic for showing contact details separately, if needed
+    event.stopPropagation(); // Prevents click event propagation to parent elements
+    console.log('Contact details clicked:', item);
+  }
+
+  closeDetails() {
+    this.selectedItem = null;
+  }
 
 timeAgo(date: string, time: string): string {
   const now = new Date();
