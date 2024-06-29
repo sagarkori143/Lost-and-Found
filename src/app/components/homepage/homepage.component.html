@@ -12,13 +12,20 @@
         <img [src]="item.image">
         <div class="CardBottom">
           <span>{{ timeAgo(item.date, item.time) }}</span>
-          <strong><p [ngClass]="{'Lost': item.status === 'Lost', 'Found': item.status === 'Found'}"> {{item.status}}</p></strong>
+          <strong>
+            <p [ngClass]="{'Lost': item.status === 'Lost', 'Found': item.status === 'Found'}">
+              {{item.status}}
+            </p>
+          </strong>
         </div>
         <div class="Details">
           <div class="DetailsText">
-          <h3>{{item.title}}</h3>
-          <p>{{item.description}}</p>
-          <p><strong>Place:</strong> {{item.Place}}</p>
+            <h3>{{item.title}}</h3>
+            <p>{{item.description}}</p>
+            <p class="Location">
+              <img [src]="item.status === 'Found' ? 'locationGreen.png' : 'locationRed.png'" height="3px"/> 
+              {{item.Place}}
+            </p>
           </div>
           <button class="btn">Contact the author</button>
         </div>

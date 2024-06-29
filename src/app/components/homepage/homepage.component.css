@@ -108,6 +108,15 @@ body {
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
 }
+.ItemCard .Details .Location{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.ItemCard .Details .Location img{
+    height: 20px;
+    width: 20px;
+}
 .ItemCard .Details .btn{
     position: fixed;
     bottom: 5px;
