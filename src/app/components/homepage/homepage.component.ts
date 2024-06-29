@@ -10,113 +10,113 @@ import { CommonModule } from '@angular/common';
   styleUrl: './homepage.component.css'
 })
 export class HomepageComponent {
-  LostAndFounditems=[
+  LostAndFounditems = [
     {
       "title": "A black umbrella",
       "status": "Lost",
       "description": "It was a black umbrella with a doggy tag over it",
-      "image": "https://images.unsplash.com/photo-1617359273303-8817f7608d38",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNDeG8Tucxub9KkS7l4rCx990ny3MCJL7mQKfwBtO-211fEAl8mtJR-DT0bmzY0KXYdTs&usqp=CAU",
       "Place": "Area around the seminar hall",
-      "date": "2024-03-15",
+      "date": "2024-06-24",
       "time": "10:35"
     },
     {
       "title": "Iphone back cover",
       "status": "Found",
       "description": "It is a green color Iphone 13 back cover with R written on it's back.",
-      "image": "https://images.unsplash.com/photo-1593150655159-5d51e91b8ee0",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxQALjcYmlgZw83hoo8XMpgv9iv2w_iEdoDQ&s",
       "Place": "Hostel-4",
-      "date": "2024-02-22",
+      "date": "2024-06-23",
       "time": "14:50"
     },
     {
       "title": "Red Wallet",
       "status": "Lost",
       "description": "A red leather wallet with multiple cards and some cash.",
-      "image": "https://images.unsplash.com/photo-1612824037696-465c94d7bba7",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlvKI0OwjKZGPB7xfaU9398K3kKMujot3gYQ&s",
       "Place": "Cafeteria",
-      "date": "2024-01-10",
+      "date": "2024-06-22",
       "time": "12:15"
     },
     {
       "title": "Silver Bracelet",
       "status": "Found",
       "description": "A silver bracelet with a heart charm.",
-      "image": "https://images.unsplash.com/photo-1559163499-413811fb2344",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUy-sjvrFidjOHqw8nsByzv9DStAa6WVNs-w&s",
       "Place": "Library",
-      "date": "2024-06-05",
+      "date": "2024-06-21",
       "time": "09:45"
     },
     {
       "title": "Black Laptop Bag",
       "status": "Lost",
       "description": "A black laptop bag containing a MacBook Pro.",
-      "image": "https://images.unsplash.com/photo-1555679423-cb64a9889464",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3rcS3xFC3-pMacVH4xWpoQU9o-26Ha9qxWQ&s",
       "Place": "Lecture Hall 2",
-      "date": "2024-04-22",
+      "date": "2024-06-20",
       "time": "15:30"
     },
     {
       "title": "Water Bottle",
       "status": "Found",
       "description": "A blue water bottle with a motivational quote.",
-      "image": "https://images.unsplash.com/photo-1582468441447-eab1fb048bb5",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMBbvn8NSt5AcK_euTVtMAi073ub0Uerux1A&s",
       "Place": "Gym",
-      "date": "2024-05-19",
+      "date": "2024-06-19",
       "time": "08:00"
     },
     {
       "title": "Set of Keys",
       "status": "Lost",
       "description": "A set of keys with a Superman keychain.",
-      "image": "https://images.unsplash.com/photo-1503513962988-e142d44f0ee5",
+      "image": "https://www.shutterstock.com/image-photo/building-manager-key-set-onsite-260nw-1644336916.jpg",
       "Place": "Parking Lot",
-      "date": "2024-03-01",
+      "date": "2024-06-18",
       "time": "17:25"
     },
     {
       "title": "Sunglasses",
       "status": "Found",
       "description": "A pair of Ray-Ban sunglasses.",
-      "image": "https://images.unsplash.com/photo-1523115725-609d2afd4d9d",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmmuHsqRpV0ttZdOrbvMsNQYDe9LQ4xQOiHw&s",
       "Place": "Swimming Pool",
-      "date": "2024-06-11",
+      "date": "2024-06-17",
       "time": "13:40"
     },
     {
       "title": "Notebook",
       "status": "Lost",
       "description": "A spiral notebook with physics notes.",
-      "image": "https://images.unsplash.com/photo-1506102383123-83ca1d14af12",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF4Ei1FQyePSGj7JiAvoGaXNEkh5smQvUeCw&s",
       "Place": "Library",
-      "date": "2024-01-25",
+      "date": "2024-06-16",
       "time": "11:00"
     },
     {
       "title": "Calculator",
       "status": "Found",
       "description": "A scientific calculator, black in color.",
-      "image": "https://images.unsplash.com/photo-1581092580498-d9e5bb1e9868",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBEJ5T8UzMsi-ZAlAnhx3o8hgX-8Zb014_Uw&s",
       "Place": "Cafeteria",
-      "date": "2024-02-15",
+      "date": "2024-06-15",
       "time": "10:10"
     },
     {
       "title": "Earbuds",
       "status": "Lost",
       "description": "A pair of white Apple AirPods.",
-      "image": "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY72HhYYcmAlgc3PJ8v4iY7w8QZgj8PwJgQg&s",
       "Place": "Gym",
-      "date": "2024-06-20",
+      "date": "2024-06-14",
       "time": "18:25"
     },
     {
       "title": "Textbook",
       "status": "Found",
       "description": "A chemistry textbook, 5th edition.",
-      "image": "https://images.unsplash.com/photo-1528459105426-b4a620e8e3ab",
+      "image": "https://www.clankart.com/user-uploads/advert/Dr_OP_Tandon_textbook_of_organic_chemistry_for_jeemain__advanced16619383201.jpg",
       "Place": "Lecture Hall 3",
-      "date": "2024-05-03",
+      "date": "2024-06-13",
       "time": "14:20"
     },
     {
@@ -125,7 +125,7 @@ export class HomepageComponent {
       "description": "A silver wristwatch with a black dial.",
       "image": "https://images.unsplash.com/photo-1542546060-82c7fc8d044b",
       "Place": "Gym",
-      "date": "2024-04-12",
+      "date": "2024-06-12",
       "time": "07:45"
     },
     {
@@ -134,7 +134,7 @@ export class HomepageComponent {
       "description": "A blue passport with the name John Doe.",
       "image": "https://images.unsplash.com/photo-1512820790803-83ca1d14af12",
       "Place": "Cafeteria",
-      "date": "2024-03-27",
+      "date": "2024-06-11",
       "time": "16:00"
     },
     {
@@ -143,7 +143,7 @@ export class HomepageComponent {
       "description": "A Canon DSLR camera, black.",
       "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929",
       "Place": "Park",
-      "date": "2024-02-05",
+      "date": "2024-06-10",
       "time": "12:45"
     },
     {
@@ -152,7 +152,7 @@ export class HomepageComponent {
       "description": "A black leather jacket, size M.",
       "image": "https://images.unsplash.com/photo-1548625149-2a8555f7fc7c",
       "Place": "Auditorium",
-      "date": "2024-01-18",
+      "date": "2024-06-09",
       "time": "09:30"
     },
     {
@@ -161,7 +161,7 @@ export class HomepageComponent {
       "description": "A red woolen scarf.",
       "image": "https://images.unsplash.com/photo-1520975376472-6278c17bdec5",
       "Place": "Cafeteria",
-      "date": "2024-03-05",
+      "date": "2024-06-08",
       "time": "13:50"
     },
     {
@@ -170,7 +170,7 @@ export class HomepageComponent {
       "description": "A black handbag with a gold chain.",
       "image": "https://images.unsplash.com/photo-1531574805041-beb5e71b9bdc",
       "Place": "Library",
-      "date": "2024-04-07",
+      "date": "2024-06-07",
       "time": "15:15"
     },
     {
@@ -179,27 +179,9 @@ export class HomepageComponent {
       "description": "A pair of black leather gloves.",
       "image": "https://images.unsplash.com/photo-1506224778077-3ce0ed63377a",
       "Place": "Parking Lot",
-      "date": "2024-02-28",
+      "date": "2024-06-06",
       "time": "17:40"
     },
-    {
-      "title": "Ring",
-      "status": "Found",
-      "description": "A gold ring with a blue stone.",
-      "image": "https://images.unsplash.com/photo-1579154206971-ffabe77f4a34",
-      "Place": "Library",
-      "date": "2024-01-30",
-      "time": "11:25"
-    },
-    {
-      "title": "Hat",
-      "status": "Lost",
-      "description": "A black baseball cap with NY logo.",
-      "image": "https://images.unsplash.com/photo-1560982239-6e4d3f38427a",
-      "Place": "Gym",
-      "date": "2024-06-22",
-      "time": "19:05"
-    }
 ]
 
 timeAgo(date: string, time: string): string {

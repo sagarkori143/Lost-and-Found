@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&family=Poppins:wght@300;400&display=swap');
+
 body {
     font-family: Arial, sans-serif; /* Default font for the entire body */
 }
@@ -18,8 +20,11 @@ body {
     font-family: 'Poppins', sans-serif;
     padding-inline: 3rem;
 }
-.Nav h1{
-    font-family: 'Poppins', sans-serif;
+.Nav {
+    font-family: "Playwrite IT Moderna", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
 }
 .Login{
     height: 100%;
@@ -29,8 +34,8 @@ body {
     align-content: center;
     justify-content: space-around;
     gap: 1rem;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
+    border-top-right-radius: 3rem;
+    border-top-left-radius: 3rem;
     background-color: white;
     padding: 50px;
     padding-inline: 100px;

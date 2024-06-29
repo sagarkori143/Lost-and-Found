@@ -1,18 +1,27 @@
 <div>
   <app-navbar></app-navbar>
 </div>
-<div class="Container">
-  <p class="Heading">Recently reported items!</p>
-  <div class="Items">
-      <div *ngFor="let item of LostAndFounditems" class="ItemCard" [ngClass]="{'Lost': item.status === 'Lost', 'Found': item.status === 'Found'}">
-          <img [src]="item.image">
-          <span>{{ timeAgo(item.date, item.time) }}</span>
-          <div class="Details">
-              <h3>{{item.title}}</h3>
-              <p>{{item.description}}</p>
-              <p><strong>Status:</strong> {{item.status}}</p>
-              <p><strong>Place:</strong> {{item.Place}}</p>
-          </div>
+<div class="Wrapper">
+  <div class="Container">
+    <div class="Heading">
+      <p>Recently reported items!</p>
+      <button class="postBtn btn">Post New</button>
+    </div>
+    <div class="Items">
+      <div *ngFor="let item of LostAndFounditems" class="ItemCard"
+        [ngClass]="{'Lost': item.status === 'Lost', 'Found': item.status === 'Found'}">
+        <img [src]="item.image">
+        <div class="CardBottom">
+        <span>{{ timeAgo(item.date, item.time) }}</span>
+        </div>
+        <div class="Details">
+          <h3>{{item.title}}</h3>
+          <p>{{item.description}}</p>
+          <p><strong>Status:</strong> {{item.status}}</p>
+          <p><strong>Place:</strong> {{item.Place}}</p>
+          <button class="btn">Contact the author</button>
+        </div>
       </div>
+    </div>
   </div>
 </div>
