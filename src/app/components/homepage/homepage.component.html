@@ -5,7 +5,7 @@
   <div class="Container">
     <div class="Heading">
       <p>Recently reported items!</p>
-      <button class="postBtn btn">Post New</button>
+      <button class="postBtn btn" (click)="openForm()">Post New</button>
     </div>
     <div class="Items">
       <div *ngFor="let item of LostAndFounditems" class="ItemCard" (click)="selectItem(item)">
@@ -34,3 +34,4 @@
   </div>
 </div>
 <app-post-details *ngIf="selectedItem" [ItemSelected]="selectedItem" (close)="closeDetails()"></app-post-details>
+<app-newpost-form *ngIf="isFormOpen" (close)="closeForm()"></app-newpost-form>

@@ -1,141 +1,156 @@
 body {
-  font-family: Arial, sans-serif; 
+  font-family: Arial, sans-serif;
 }
 
-
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(5px);
-    z-index: 1000;
-    opacity: 1;
-    transition: opacity 0.3s ease;
-  }
-  
-  .popup {
-    width: 80%;
-    height: 80%;
-    border-radius: 30px;
-    padding: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    transform: scale(0.7);
-    opacity: 1;
-    animation: popupOpenAnimation 0.2s forwards;
-    transition: transform 0.25s ease, opacity 0.25s ease;
-  }
-  .popup .Closer{
-    position: fixed;
-    top: 10px;
-    right: 10px;
-  }
-  .popup .Closer{
-    height: 30px;
-    cursor: pointer;
-  }
-  .popup .Closer:hover{
-    scale: 120%;
-  }
-  .popup .Left{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.3rem;
-    padding-top: 1rem;
-    height: 100%;
-    width: 45%;
-    overflow: hidden;
-    box-sizing: border-box;
-  }
-  .popup .Left img{
-    height: 80%;
-    object-fit: contain;
-    border-radius: 10px;
-  }
-  .ImagesArray{
-    height: 15%;
-    width: fit-content;
-    display: flex;
-    padding: 3px;
-    gap: 2rem;
-  }
-  .ImagesArray .otherImage{
-    height: 100%;
-    width: max-content;
-    padding: 5px;
-    cursor: pointer;
-    object-fit: cover;
-  }
-  .ImagesArray .Selected {
-    filter: drop-shadow(0 0 0.6rem #1A71FE);
-  }
-  .ImagesArray .otherImage:hover{
-    filter: drop-shadow(0 0 0.6rem #1A71FE);
-    border-radius: 10px;
-  }
-  .Divider{
-    border: solid grey 1px;
-    height: 100%;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  opacity: 1;
+  animation: backdropOpenAnimation 0.3s forwards;
+  transition: opacity 0.3s ease;
+}
 
-  .popup .Right{
-    padding: 1rem;
-    height: 100%;
-    width: 45%;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .popup .Right h2{
-    color: #1A71FE;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+.popup {
+  width: 80%;
+  height: 80%;
+  border-radius: 30px;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  animation: popupOpenAnimation 0.3s forwards;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
-  /*These are animation for opena and close of the backdrop*/
-  .popup.closing {
-    transform: scale(0.6);
+.popup .Closer {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.popup .Closer:hover {
+  transform: scale(1.3);
+}
+
+.popup .Left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  padding-top: 1rem;
+  height: 100%;
+  width: 45%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.popup .Left img {
+  height: 80%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.ImagesArray {
+  height: 15%;
+  width: fit-content;
+  display: flex;
+  padding: 3px;
+  gap: 2rem;
+}
+
+.ImagesArray .otherImage {
+  height: 100%;
+  width: max-content;
+  padding: 5px;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.ImagesArray .Selected {
+  filter: drop-shadow(0 0 0.6rem #1A71FE);
+}
+
+.ImagesArray .otherImage:hover {
+  filter: drop-shadow(0 0 0.6rem #1A71FE);
+  border-radius: 10px;
+}
+
+.Divider {
+  border: solid grey 1px;
+  height: 100%;
+}
+
+.popup .Right {
+  padding: 1rem;
+  height: 100%;
+  width: 45%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.popup .Right h2 {
+  color: #1A71FE;
+}
+
+/* These are animations for open and close of the backdrop */
+.backdrop.closing {
+  animation: backdropCloseAnimation 0.3s forwards;
+}
+
+.popup.closing {
+  animation: popupCloseAnimation 0.3s forwards;
+}
+
+@keyframes backdropOpenAnimation {
+  from {
     opacity: 0;
   }
-  
-  @keyframes popupOpenAnimation {
-    to {
-      transform: scale(1);
-    }
+  to {
+    opacity: 1;
   }
-  
-  @keyframes popupCloseAnimation {
-    from {
-      transform: scale(1);
-      opacity: 1;
-    }
-    to {
-      transform: scale(0.7);
-      opacity: 0;
-    }
+}
+
+@keyframes backdropCloseAnimation {
+  from {
+    opacity: 1;
   }
+  to {
+    opacity: 0;
+  }
+}
 
+@keyframes popupOpenAnimation {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 
-
-
-  
+@keyframes popupCloseAnimation {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+}

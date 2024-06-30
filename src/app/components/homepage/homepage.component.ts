@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { CommonModule } from '@angular/common';
 import { PostDetailsComponent } from '../post-details/post-details.component';
+import { NewpostFormComponent } from '../newpost-form/newpost-form.component';
 @Component({
   selector: 'app-homepage',
   standalone: true,
-  imports: [NavbarComponent,CommonModule,PostDetailsComponent],
+  imports: [NavbarComponent,CommonModule,PostDetailsComponent,NewpostFormComponent],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css'
 })
@@ -300,10 +301,19 @@ export class HomepageComponent {
 
  /* This is the backdrop logic */
  selectedItem: object | null = null;
+ isFormOpen = false;
 
   selectItem(Item: object) {
     this.selectedItem = Item;
   }
+  openForm() {
+    this.isFormOpen = true;
+  }
+
+  closeForm() {
+    this.isFormOpen = false;
+  }
+
   showContactDetails(item: any, event: Event) {
     event.stopPropagation(); // Prevents click event propagation to parent elements
     console.log('Contact details clicked:', item);
