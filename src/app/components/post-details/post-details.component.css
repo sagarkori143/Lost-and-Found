@@ -74,13 +74,15 @@ body {
   .ImagesArray .otherImage{
     height: 100%;
     width: max-content;
-    border: solid white;
     padding: 5px;
     cursor: pointer;
     object-fit: cover;
   }
+  .ImagesArray .Selected {
+    filter: drop-shadow(0 0 0.6rem #1A71FE);
+  }
   .ImagesArray .otherImage:hover{
-    border: solid #1A71FE 3px;
+    filter: drop-shadow(0 0 0.6rem #1A71FE);
     border-radius: 10px;
   }
   .Divider{
@@ -109,27 +111,7 @@ body {
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
   /*These are animation for opena and close of the backdrop*/
   .popup.closing {
     transform: scale(0.6);

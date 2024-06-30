@@ -4,7 +4,7 @@
       <img [src]="imageSelected">
       <div class="ImagesArray">
         <div *ngFor="let Image of ItemSelected.otherImages" class="otherImage">
-          <img [src]="Image.src" alt="img" (click)="changeImage(Image.src)" />
+          <img [src]="Image.src" alt="img" (click)="changeImage(Image.src)" [ngClass]="{'Selected': Image.src === imageSelected}" />
         </div>
       </div>
     </div>
